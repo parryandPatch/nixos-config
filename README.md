@@ -72,9 +72,9 @@ nano configuration.nix
 # Test before applying it. If there are any issues, reboot.
 sudo nixos-rebuild test --flake .#nixos
 
-#The wallpaper may not load. use the command
+#The wallpaper may not load unless you reboot. Use the command:
 systemctl --user restart set-wallpaper.service
 
-#If you face no issues, to make changes permanent use;
+#If you face no issues,make changes permanent using:
 sudo nixos-rebuild switch --flake .#nixos
 
