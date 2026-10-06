@@ -103,6 +103,9 @@
     fastfetch
     htop
     cava
+    element-desktop
+    vscode
+    opencode
   # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
 
   #   wget
@@ -161,6 +164,7 @@
   # and migrated your data accordingly.
   #
   system.stateVersion = "26.05";
- 
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
 
 }
